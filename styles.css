@@ -1,37 +1,80 @@
+/* --- Global --- */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0e0e0e;
-    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
 }
 
-header {
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #111;
+    border-bottom: 1px solid #00ff88;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00ff88;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #00ff88;
+}
+
+/* --- Hero --- */
+.hero {
+    height: 60vh;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #1e1e1e, #333);
 }
 
-.logo {
-    width: 120px;
-    margin-bottom: 20px;
+.hero-content h1 {
+    font-size: 3rem;
+    color: #00ff88;
 }
 
 .cta {
     display: inline-block;
+    margin-top: 20px;
     padding: 12px 24px;
-    background: #00c853;
-    color: #fff;
+    background: #00ff88;
+    color: #000;
     border-radius: 6px;
     text-decoration: none;
-    margin-top: 20px;
+    font-weight: bold;
 }
 
-section {
-    padding: 50px 20px;
-    max-width: 900px;
+.cta:hover {
+    background: #00cc66;
+}
+
+/* --- Sections --- */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
     margin: auto;
 }
 
+.section h2 {
+    text-align: center;
+    color: #00ff88;
+    margin-bottom: 40px;
+}
+
+/* --- Grid --- */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -39,19 +82,29 @@ section {
 }
 
 .card {
-    background: #1e1e1e;
+    background: #111;
     padding: 20px;
+    border: 1px solid #00ff88;
     border-radius: 8px;
+    transition: transform 0.2s;
 }
 
-.screens img {
-    width: 30%;
-    margin: 1%;
-    border-radius: 8px;
+.card:hover {
+    transform: translateY(-5px);
 }
 
+/* --- Steps --- */
+.steps {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* --- Footer --- */
 footer {
     text-align: center;
     padding: 20px;
     background: #111;
+    border-top: 1px solid #00ff88;
 }
